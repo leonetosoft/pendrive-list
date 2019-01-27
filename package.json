@@ -1,10 +1,12 @@
 {
   "name": "pendrive-list",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "List pendrive on Windows",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "license": "ISC",
+  "keywords": ["list usb", "list pendrive", "pendrives", "list pendrives"],
+  "repository": "https://github.com/leonetosoft/pendrive-list",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lib": "npm run clean && tsc",

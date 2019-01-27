@@ -1,16 +1,25 @@
-# pendrive-list
-List PenDrive insert on computer, use wmic, only windows
+List pendrives, use wmic, only windows.
 
-npm install --save pendrive-list
+**Suported Plataforms**
+* Windows
 
-const list = require('pendrive-list');
+**Instructions**
 
-list()
+    const  list  =  require('pendrive-list');
+    
+    // using sync function
+    console.log(await  list.ListPenDrive());
+    
+    // or using promise
+    list.ListPenDrive().then(pendrives  => {
+	    console.log(pendrives);
+    }).catch(err  => {
+	    console.log(err);
+    });
 
-Return: 
 
-[{
-    name: '...',
-    path: 'E:'
-}]
+Print:
+
+    [ { name: 'UBUNTU-SERV', path: 'E:' } ]
+
 
